@@ -27,6 +27,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:orientation="vertical">
 
         <TextView
@@ -38,6 +40,23 @@
             android:textStyle="bold"
             android:fontFamily="sans-serif-condensed-light"
             android:gravity="center" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_background">
+            <EditText
+                android:id="@+id/et_otpPass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="__ __ __ __ __"
+                android:inputType="number"
+                android:background="@android:color/transparent"
+                android:textSize="20sp"
+                android:gravity="center"/>
+
+        </RelativeLayout>
 
     </LinearLayout>
 
